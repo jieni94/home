@@ -1,0 +1,447 @@
+/* jAlbum 27.0.7 with Neptune 74, Midnight style, album creation date 2022/4/20 下午3:36 */
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	background-color: #0c283e;
+}
+body {
+	font-family: Verdana, sans-serif;
+	color: #d1d9df;
+	text-align: center;
+}
+body a {
+	color: #d1d9df;
+}
+body a:hover {
+	color: #748b9e;
+}
+a, audio, video {
+	outline: none;
+}
+audio {
+	height: 32px;
+}
+img, iframe {
+	outline: none;
+	border: none;
+}
+img {
+	user-select: none;
+	-webkit-user-select: none; /* Safari */
+}
+#ne-parabody, #ne-fthumbs img, #ne-thumbs img, .ne-ipimage img {
+	animation: fadein 500ms;
+}
+.ne-slidetitle, .ne-slidecomment, .ne-slidectr {
+	animation: fadein 2000ms;
+}
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+#ne-notheme > div {
+	margin: 0px auto 15px;
+	min-height: 32px;
+	padding: 5px 5px 10px;
+	background-color: #31546e;
+}
+#ne-banner {
+	box-sizing: border-box;
+	margin: 0px auto 25px;
+	min-height: 300px;
+	padding-top: 46px;
+	background: url('../ne-theme.jpg') center no-repeat;
+	background-size: cover;
+}
+#ne-banner img {
+	padding: 5px 0px;
+}
+#ne-titledim {
+	background-color: rgb(0 0 0 / 0.3);
+}
+.ne-pagetitle, .ne-pagedescription, .ne-pagetitleTI, .ne-pagedescriptionTI, .ne-pagetitleip {
+	max-width: 900px;
+	margin: 0px auto;
+}
+.ne-pagetitle {
+	color: #d1d9df;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	text-shadow: none;
+	padding-bottom: 3px;
+}
+.ne-pagetitle a {
+	color: #d1d9df;
+	text-decoration: underline;
+}
+.ne-pagetitle a:hover {
+	color: #748b9e;
+}
+.ne-pagedescription {
+	color: #d1d9df;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-shadow: none;
+}
+.ne-pagedescription a {
+	color: #d1d9df;
+	text-decoration: underline;
+}
+.ne-pagedescription a:hover {
+	color: #748b9e;
+}
+.ne-pagetitleTI {
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-shadow: 5px 5px 5px rgb(0 0 0 / 0.3);
+	padding: 42px 10px 20px 10px;
+}
+.ne-pagetitleTI a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.ne-pagetitleTI a:hover {
+	color: #bbbbbb;
+}
+.ne-pagedescriptionTI {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-shadow: 3px 3px 5px rgb(0 0 0 / 0.3);
+	padding: 0px 10px 20px 10px;
+}
+.ne-pagedescriptionTI a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.ne-pagedescriptionTI a:hover {
+	color: #bbbbbb;
+}
+#ne-navleft {
+	width: 52px;
+	height: 32px;
+	text-align: left;
+	float: left;
+	font-size: 0px;
+}
+#ne-navleft img {
+	width: 32px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+#ne-navright {
+	position: relative;
+	width: 52px;
+	height: 32px;
+	text-align: right;
+	float: right;
+	font-size: 0px;
+}
+#ne-navright img {
+	width: 32px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.ne-infotxt {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-shadow: none;
+	text-align: center;
+	margin: 0px auto;
+	max-width: 900px;
+	padding: 0px 10px;
+}
+.ne-infotxt a {
+	text-decoration: underline;
+}
+.ne-infotxtbottom {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-shadow: none;
+	text-align: center;
+	margin: 10px auto;
+	max-width: 900px;
+	padding: 0px 10px;
+}
+.ne-infotxtbottom a {
+	text-decoration: underline;
+}
+.ne-fthumbbox, .ne-thumbbox {
+	max-width: 1600px;
+	margin: 0 auto 10px;
+	padding: 0px 43px;
+}
+#ne-thumbs {
+	max-width: 1600px;
+	margin: 0px auto 10px;
+	padding: 15px 52px 0px;
+	font-size: 0px; /* Hack to collapse whitespace between boxes */
+}
+#ne-thumbs > div {
+	margin: 4.0px;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 360px;
+}
+#ne-thumbs > div > div:first-of-type {
+	position: relative;
+	overflow: hidden;
+	max-width: 360px;
+	max-height: 240px;
+}
+#ne-thumbs img {
+	max-width: 100%;
+	height: auto;
+}
+#ne-fthumbs img:hover, #ne-thumbs img:hover {
+	transform: scale(1.1);
+	transition: transform 1s;
+}
+#ne-fthumbs img, #ne-thumbs img {
+	transition: transform 1s;
+}
+.jg-entry {
+	position: relative;
+}
+.ne-videooverlay img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+	width: 120px;
+}
+.ne-thumbcaption {
+	overflow-wrap: break-word;
+	margin: 5px 5px 10px;
+}
+.ne-credits {
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin: 0px auto 10px;
+	text-shadow: none;
+}
+.ne-credits a {
+	font-weight: bold;
+	text-decoration: none;
+}
+#ne-pagetop {
+	background-color: #31546e;
+	position: fixed;
+	bottom: 40px;
+	left: 10px;
+	opacity: 0.75;
+	display: none;
+}
+#ne-pagetop img {
+	width: 32px;
+	padding: 10px 5px 5px;
+}
+#ne-pagetop:hover {
+	cursor: pointer;
+}
+.ne-footer, .ne-footernoicon {
+	padding: 5px 10px 5px;
+	text-align: center;
+	background-color: #31546e;
+	border-radius: 3px;
+}
+.ne-footer {
+	min-height: 28px;
+}
+.ne-slidenavleft {
+	height: 28px;
+	float: left;
+	font-size: 0px;
+}
+.ne-slidenavleft img {
+	width: 28px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.ne-slidenavright {
+	height: 28px;
+	float: right;
+	font-size: 0px;
+	text-align: right;
+}
+.ne-slidenavright img {
+	width: 28px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.ne-snav1 {
+	width: 48px;
+}
+.ne-snav2 {
+	width: 96px;
+}
+.ne-snav3 {
+	width: 144px;
+}
+.ne-snav4 {
+	width: 192px;
+}
+.ne-globe {
+	float: left;
+	width: 28px;
+}
+.ne-slidetitle, .ne-slidecomment {
+	max-width: 900px;
+	margin: 0px auto;
+}
+.ne-slidetitle {
+	font-family: Verdana, sans-serif;
+	color: #d1d9df;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	margin-bottom: 3px;
+	text-shadow: none;
+	user-select: text;
+	-webkit-user-select: text; /* Safari */
+}
+.ne-slidetitle a {
+	color: #d1d9df;
+	text-decoration: underline;
+}
+.ne-slidetitle a:hover {
+	color: #748b9e;
+}
+.ne-slidecomment {
+	font-family: Verdana, sans-serif;
+	color: #d1d9df;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-bottom: 3px;
+	text-shadow: none;
+	user-select: text;
+	-webkit-user-select: text; /* Safari */
+}
+.ne-slidecomment a {
+	color: #d1d9df;
+	text-decoration: underline;
+}
+.ne-slidecomment a:hover {
+	color: #748b9e;
+}
+.ne-bodyopening, .ne-bodyclosing {
+	margin: 5px;
+}
+#ne-bodyspacer {
+	height: 30px;
+}
+.ne-disabled {
+	opacity: 0.5;
+	cursor: default !important;
+}
+.ne-hidden {
+	display: none;
+}
+.fbx .fbItemNumber, .ne-slidectr {
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: italic;
+	font-variant: normal;
+	text-shadow: none;
+}
+.fbx .fbResizer {
+	display: none;
+}
+.fbx.fbOverlay {
+	cursor: zoom-out;
+}
+a.fbNextPanel {
+	width: 55% !important;
+	cursor: url('cursornext.png'), pointer !important;
+}
+a.fbPrevPanel {
+	cursor: url('cursorprev.png'), pointer !important;
+}
+#ne-mapcontainer {
+	position: relative;
+	margin: 0px auto;
+	padding: 0px 15px;
+	max-width: 1480px;
+	top: 15px;
+	z-index: 1;
+}
+#ne-mapframe {
+	background-color: #31546e;
+	padding: 20px;
+	border-radius: 3px;
+}
+#ne-mapcanvas {
+	position: relative;
+	width: 100%;
+	padding-bottom: 62.5%;
+}
+.ne-mapfooter {
+	padding: 5px 10px 5px;
+	border-radius: 3px;
+	margin-top: 5px;
+	height: 28px;
+	background-color: #31546e;
+}
+#ne-mapclose {
+	float: left;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+}
+#ne-mapdim {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 1.0;
+	cursor: zoom-out;
+}
+@media (max-height: 500px) {
+	.ne-slidetitle, .ne-slidecomment {
+		display: -webkit-box;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+	}
+}
+@media (max-width: 500px), (max-height: 500px) {
+	#ne-fthumbs, #ne-thumbs, .ne-thumbbox {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	#ne-thumbs > div, #ne-fthumbs > div {
+		margin: 2px;
+	}
+	#ne-mapframe {
+		padding: 2px;
+	}
+	.fbContentWrapper {
+		box-shadow: none;
+	}
+}
